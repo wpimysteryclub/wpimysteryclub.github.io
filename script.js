@@ -1,24 +1,27 @@
 
 // NONE OF THIS CODE IS PART OF THE GAME, PLEASE DO NOT LOOK FURTHER OR ELSE YOU WILL RUIN YOUR EXPERIENCE
 
-
 var loggedName;
 var isLoggedIn;
 const navButtons = parent.frames[0].document.getElementsByTagName("tr");
 
 startupSite();
 
+// ONCE AGAIN THIS CODE SHOULD NOT BE VIEWED AS PART OF THE GAME
+
 function startupSite(){
+  navButtons[3].style.visibility = "hidden";
   if(getCookie("loggedIn_WPIARG") == "true"){
     //console.log("AHHHH");
     siteLogin(getCookie("username_WPIARG"));
   }
 }
 
+// LIKE SERIOUSLY STOP RIGHT NOW IF YOURE PLAYING THE GAME
 
 function siteLogin(name){
   isLoggedIn = "true";
-  console.log(parent.frames[0].document.getElementById("loginButton"));
+  //console.log(parent.frames[0].document.getElementById("loginButton"));
   navButtons[2].style.visibility = "hidden";
   navButtons[3].style.visibility = "visible";
 }
@@ -32,6 +35,8 @@ function logout(){
   }
 }
 
+// THIS IS HOW YOU RUIN YOUR IMMERSION
+
 function sendLogin(){
     var nameInp = document.getElementById("usernameInput").value;
     var passwordInp = document.getElementById("passwordInput").value;
@@ -40,8 +45,9 @@ function sendLogin(){
 
 }
 
+
 function validateLogin(username, password){
-    if(username == "kanderson" && password == "wedgerats"){
+    if(username == "kanderson" && password == "102294"){
       confirmLogin("kyle");
     }else if(username == "vwhite" && password == "vp"){
       confirmLogin("veronica");
@@ -49,15 +55,21 @@ function validateLogin(username, password){
       confirmLogin("donna");
     }else if(username == "jmurphy" && password == "donna"){
       confirmLogin("jack");
+    }else{
+      sendInvalidLogin();
     }
 
     
 }
 
+function sendInvalidLogin(){
+  document.getElementById("welcomeMessage").innerHTML = "Invalid Login! <br>Nice try buster";
+}
+
 
 
 function setCookie(cname, cvalue, exdays) {
-    console.log("SET COOKIE " + cname + " AS " + cvalue);
+    //console.log("SET COOKIE " + cname + " AS " + cvalue);
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
