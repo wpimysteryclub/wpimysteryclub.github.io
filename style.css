@@ -16,3 +16,21 @@ a:visited{
 a:hover{
     color: fuchsia;
 }
+
+
+b{
+    color: aqua;
+    font-weight: lighter;
+}
+
+hr.dashed {
+    border-top: 3px dashed aqua;
+  }
+  hr.rounded {
+    border-top: 2px dashed firebrick;
+  }
+
+#lockedMessage{
+    color:firebrick;
+    font-weight: lighter;
+}
