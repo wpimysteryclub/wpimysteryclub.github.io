@@ -34,3 +34,10 @@ hr.dashed {
     color:firebrick;
     font-weight: lighter;
 }
+
+#countdown{
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  color: firebrick;
+}
