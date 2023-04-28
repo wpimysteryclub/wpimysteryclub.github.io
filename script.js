@@ -37,7 +37,9 @@ var cT9 = new Thread("Amnesia Project Reboot",[new ForumPost("April 24, 2023", c
 var cT10 = new Thread("Mission Blatner Report - Success",[new ForumPost("April 27, 2023",cUsers[5],"Dan Blatner remembers no longer.<br><br><br>The Council Watches")]);
 var cT11 = new Thread("We Know What You're Doing",[new ForumPost("April 28, 2023",cUsers[0],"We know what you're doing, Agent Red.<br><br>This will not end well for you.<br><br><br>The Council Watches")]);
 
-var councilThreads = [cT1,cT2,cT3,cT4,cT5,cT6,cT7,cT8,cT9,cT10,cT11];
+var cT12 = new Thread("Mission Mann Report - Success", [new ForumPost("April 28, 2023",cUsers[0],"Rhory Mann remembers no longer.<br><br><br>The Council Watches")]);
+
+var councilThreads = [cT1,cT2,cT3,cT4,cT5,cT6,cT7,cT8,cT9,cT10,cT11,cT12];
 
 
 startupSite();
