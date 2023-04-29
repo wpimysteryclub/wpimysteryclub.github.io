@@ -38,6 +38,24 @@ hr.dashed {
 #countdown{
   text-align: center;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 300%;
   color: firebrick;
+}
+#codeEntries{
+  text-align: center;
+  font-size: 125%;
+  color: fuchsia;
+}
+
+#hCodeO{
+  color:red;
+}
+#iCodeO{
+  color:red;
+}
+#wCodeO{
+  color: red;
+}
+#lCodeO{
+  color:red;
 }

@@ -2,6 +2,44 @@
 // NONE OF THIS CODE IS PART OF THE GAME, PLEASE DO NOT LOOK FURTHER OR ELSE YOU WILL RUIN YOUR EXPERIENCE
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+//... stop pls
+
+
+
+
+
+
+
+
+
+
+
+
+
+// stop.....
+
+
+
+
+
+
+
+
+// smh my head trey
+
 var loggedName;
 var isLoggedIn;
 const navButtons = parent.frames[0].document.getElementsByTagName("tr");
@@ -168,12 +206,23 @@ function validateLogin(username, password){
       confirmLogin("jack");
     }else if(username == "RedMediterranean" && password == "ForeverSilence"){
       confirmLogin("council");
+    }else if(username == "clearCookies"){
+      clearCookies();
     }
       else{
       sendInvalidLogin();
     }
 
     
+}
+
+function clearCookies(){
+  setCookie("loggedIn_WPIARG","false",1);
+  setCookie("username_WPIARG","",1);
+  setCookie("higginsCode_WPIARG", "false",1);
+  setCookie("wedgeCode_WPIARG", "false",1);
+  setCookie("innovationCode_WPIARG", "false",1);
+  setCookie("libraryCode_WPIARG", "false",1);
 }
 
 function sendInvalidLogin(){
